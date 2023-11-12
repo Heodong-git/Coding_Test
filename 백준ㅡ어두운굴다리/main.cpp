@@ -1,20 +1,21 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 int main()
 {
 	std::ios::sync_with_stdio(false); std::cin.tie(NULL); std::cout.tie(NULL);
-	
+
 	// 굴다리의 길이 N이 주어진다.
 	int len = 0;
 	std::cin >> len;
-	
-	std::vector<bool> Road = std::vector<bool>();
+
+	std::vector<int> Road = std::vector<int>();
 	Road.resize(len + 1);
 	for (size_t i = 0; i < Road.size(); i++)
 	{
-		Road[i] = false;
+		Road[i] = i;
 	}
 
 	// 가로등의 개수 M 이 주어진다.
@@ -28,29 +29,30 @@ int main()
 	for (size_t i = 0; i < Positions.size(); i++)
 	{
 		std::cin >> Positions[i];
-		// 가로등 배치 
-		Road[Positions[i]] = true;
 	}
 
-	// 이걸할필요가있나? 
-
-	// 일단 내가 정해준 위치에 가로등을 배치했을때 지나갈수 있냐 없냐의 상황을 체크를해 
-	for (size_t i = 0; i < Road.size(); i++)
+	// 여기부터 주석 
+	int max = 0;
+	// 첫번째 포지션의 값이 max가 된다. 
+	max = Positions[0];
+	for (size_t i = 0; i < Positions.size() - 1; i++)
 	{
-		std::vector<bool> TempRoad = Road;
-		int lt = 0;
-		int rt = Road.size() - 1;
-		int mid = lt + rt / 2;
-		int height = 0;
-
-		while (lt <= rt)
+		float temp = 0;
+		temp = ceil((static_cast<float>(Positions[i + 1]) - static_cast<float>(Positions[i])) / 2.0f);
+		if (max < temp)
 		{
-			// 반복 처음 시작할때 현재 가로등의 위치를 체크하여 
-			// 높이가 몇이 필요한지 구한다. 
-			if(TempRoad[])
+			max = temp;
 		}
-		
 	}
+	
+	// 마지막 가로등에서부터 최종 위치까지의 거리를 구한다.
+	int last = Road[Road.size() - 1] - Positions[Positions.size() - 1];
+	if (max < last)
+	{
+		max = last;
+	}
+	
+	std::cout << max;
 
 	return 0;
 }
