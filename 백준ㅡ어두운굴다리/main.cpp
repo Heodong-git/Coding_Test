@@ -35,6 +35,8 @@ int main()
 	int max = 0;
 	// 첫번째 포지션의 값이 max가 된다. 
 	max = Positions[0];
+
+	// 가로등 위치만 가지고 구한거라서 그런거임
 	for (size_t i = 0; i < Positions.size() - 1; i++)
 	{
 		float temp = 0;
