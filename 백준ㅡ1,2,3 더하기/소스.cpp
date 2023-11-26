@@ -1,14 +1,22 @@
 #include <iostream>
 #include <vector>
 
-int Function(int _Value)
+void Function(int _Value)
 {
 	int result = 0;
 
-	
+	// 만약 2를 넣었다면
+	// 1,2,3 의 합으로 나타내는 방법은 1개이다. 
+	// 1 + 1
+
+	// 3의 경우
+	// 1 + 1 + 1
+	// 1 + 2
+	// 2 + 1
 
 
-	return result;
+
+	std::cout << result;
 }
 
 
@@ -30,8 +38,7 @@ int main()
 	
 	for (size_t i = 0; i < values.size(); i++)
 	{
-		int result = Function(values[i]);
-		std::cout << result;
+		Function(values[i]);
 	}
 
 	return 0;
