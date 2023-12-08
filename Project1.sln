@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "백준ㅡX보다 작은수"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "백준ㅡ알고리즘 수업-너비우선탐색1", "백준ㅡ알고리즘 수업-너비우선탐색1\백준ㅡ알고리즘 수업-너비우선탐색1.vcxproj", "{1D3EADA9-D2EC-481E-AA18-76188341616B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "백준ㅡ쉬운 최단거리", "백준ㅡ쉬운 최단거리\백준ㅡ쉬운 최단거리.vcxproj", "{CA1BE422-C5E2-4FB4-A081-B225E9B612D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -181,6 +183,14 @@ Global
 		{1D3EADA9-D2EC-481E-AA18-76188341616B}.Release|x64.Build.0 = Release|x64
 		{1D3EADA9-D2EC-481E-AA18-76188341616B}.Release|x86.ActiveCfg = Release|Win32
 		{1D3EADA9-D2EC-481E-AA18-76188341616B}.Release|x86.Build.0 = Release|Win32
+		{CA1BE422-C5E2-4FB4-A081-B225E9B612D3}.Debug|x64.ActiveCfg = Debug|x64
+		{CA1BE422-C5E2-4FB4-A081-B225E9B612D3}.Debug|x64.Build.0 = Debug|x64
+		{CA1BE422-C5E2-4FB4-A081-B225E9B612D3}.Debug|x86.ActiveCfg = Debug|Win32
+		{CA1BE422-C5E2-4FB4-A081-B225E9B612D3}.Debug|x86.Build.0 = Debug|Win32
+		{CA1BE422-C5E2-4FB4-A081-B225E9B612D3}.Release|x64.ActiveCfg = Release|x64
+		{CA1BE422-C5E2-4FB4-A081-B225E9B612D3}.Release|x64.Build.0 = Release|x64
+		{CA1BE422-C5E2-4FB4-A081-B225E9B612D3}.Release|x86.ActiveCfg = Release|Win32
+		{CA1BE422-C5E2-4FB4-A081-B225E9B612D3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
