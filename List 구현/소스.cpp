@@ -1,5 +1,6 @@
 #include <iostream>
 #include <list>
+#include <crtdbg.h>
 
 template <typename T>
 class LinkNode
@@ -24,10 +25,6 @@ private:
 	LinkNode<T>* m_pNextNode = nullptr;
 	T m_Data;
 };
-
-
-template <typename T>
-class LinkNode;
 
 template <typename T>
 class MyList
@@ -107,7 +104,6 @@ public:
 		m_pBeginNode->m_pNextNode = nullptr;
 		m_pEndNode->m_pPrevNode = nullptr;
 
-
 		delete m_pBeginNode;
 		delete m_pEndNode;
 	}
@@ -132,6 +128,11 @@ public:
 	size_t size() const
 	{
 		return m_iSize;
+	}
+
+	bool empty() const
+	{
+		return 0 == m_iSize;
 	}
 
 	// erase는 해당 이터레이터를 지우고 그 다음 노드를 이터레이터에 담아서 반환한다.
@@ -190,6 +191,10 @@ public:
 			// 엔드노드까지 반복 
 			Node = NextNode;
 		}
+
+		// 작업끝나고 연결해야함 
+		m_pBeginNode->m_pNextNode = m_pEndNode;
+		m_pEndNode->m_pPrevNode = m_pBeginNode;
 
 		// 반복이 종료 되었다면 사이즈를 0 으로 초기화
 		m_iSize = 0;
@@ -250,9 +255,8 @@ int main()
 
 	Test.erase(StartIter);
 	Test.clear();
-	
 
+	_CrtDumpMemoryLeaks();
 
-	int a = 0;
 	return 0;
 }

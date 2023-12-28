@@ -66,6 +66,11 @@ public:
 	// 연산자오버로딩
 	T& operator[] (const int _Index)
 	{
+		if (m_iSize <= _Index)
+		{
+			assert(false);
+		}
+
 		return m_pData[_Index];
 	}
 
@@ -99,6 +104,11 @@ public:
 	size_t capacity()
 	{
 		return m_iCapacity;
+	}
+
+	bool empty() const
+	{
+		return 0 == m_iSize;
 	}
 
 	void push_back(T _Data)
@@ -243,9 +253,14 @@ private:
 
 int main()
 {
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
 	{
 		MyVector<int> v;
 		v.push_back(6);
+
+		int Value = v[1];
+
 		v.push_back(4);
 		size_t Size = v.size();
 		size_t Capacity = v.capacity();
@@ -278,6 +293,10 @@ int main()
 
 		size_t TestSize = v.size();
 		v.push_back(5);
+
+		
+
+		int c = 0;
 
 	}
 	
