@@ -1,33 +1,33 @@
 #include <iostream>
 #include <vector>
 
-void DFS(int _Start, std::vector<int> _Graph, bool _Check)
+
+template <typename T>
+class TemplateTest
 {
-	
-}
+public:
+	TemplateTest(const T _Value, const T _Value2) :
+		Value(_Value), Value2(_Value2)
+	{
+		
+	}
+
+private:
+	T Value;
+	T Value2;
+};
+
+
 
 int main()
 {
-	
+	int Value = 1;
+	int Value2 = 2;
+	TemplateTest<int> Test(Value, Value2);
 
-
-	//std::ios::sync_with_stdio(false); std::cin.tie(NULL); std::cout.tie(NULL);
-
-	//// 학생수 
-	//int N;
-	//std::cin >> N;
-
-	//// 키를 비교한 횟수
-	//int M;
-	//std::cin >> M;
-
-	// 키를 비교한 두 학생의 번호
-	// A 가 B 의 앞에 서야 한다는 의미 
-	
-
-	
-
-	
+	float FValue = 1.0f;
+	float FValue2 = 2.0f;
+	TemplateTest<float> FTest(FValue, FValue2);
 
 	return 0;
 }
