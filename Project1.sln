@@ -65,6 +65,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "프로그래머스ㅡ정수
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "프로그래머스ㅡ두 정수 사이의 합", "프로그래머스ㅡ두 정수 사이의 합\프로그래머스ㅡ두 정수 사이의 합.vcxproj", "{2F821A0E-B580-4618-BED6-63D131B579C5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "프로그래머스ㅡ없는 숫자 더하기", "프로그래머스ㅡ없는 숫자 더하기\프로그래머스ㅡ없는 숫자 더하기.vcxproj", "{5DBF1D4F-8AF5-4931-81D7-7BAE3A889AC5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "프로그래머스ㅡ제일 작은 수 제거하기", "프로그래머스ㅡ제일 작은 수 제거하기\프로그래머스ㅡ제일 작은 수 제거하기.vcxproj", "{AB324BE7-5EBB-4C0B-ACB0-5BB28525E133}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -321,6 +325,22 @@ Global
 		{2F821A0E-B580-4618-BED6-63D131B579C5}.Release|x64.Build.0 = Release|x64
 		{2F821A0E-B580-4618-BED6-63D131B579C5}.Release|x86.ActiveCfg = Release|Win32
 		{2F821A0E-B580-4618-BED6-63D131B579C5}.Release|x86.Build.0 = Release|Win32
+		{5DBF1D4F-8AF5-4931-81D7-7BAE3A889AC5}.Debug|x64.ActiveCfg = Debug|x64
+		{5DBF1D4F-8AF5-4931-81D7-7BAE3A889AC5}.Debug|x64.Build.0 = Debug|x64
+		{5DBF1D4F-8AF5-4931-81D7-7BAE3A889AC5}.Debug|x86.ActiveCfg = Debug|Win32
+		{5DBF1D4F-8AF5-4931-81D7-7BAE3A889AC5}.Debug|x86.Build.0 = Debug|Win32
+		{5DBF1D4F-8AF5-4931-81D7-7BAE3A889AC5}.Release|x64.ActiveCfg = Release|x64
+		{5DBF1D4F-8AF5-4931-81D7-7BAE3A889AC5}.Release|x64.Build.0 = Release|x64
+		{5DBF1D4F-8AF5-4931-81D7-7BAE3A889AC5}.Release|x86.ActiveCfg = Release|Win32
+		{5DBF1D4F-8AF5-4931-81D7-7BAE3A889AC5}.Release|x86.Build.0 = Release|Win32
+		{AB324BE7-5EBB-4C0B-ACB0-5BB28525E133}.Debug|x64.ActiveCfg = Debug|x64
+		{AB324BE7-5EBB-4C0B-ACB0-5BB28525E133}.Debug|x64.Build.0 = Debug|x64
+		{AB324BE7-5EBB-4C0B-ACB0-5BB28525E133}.Debug|x86.ActiveCfg = Debug|Win32
+		{AB324BE7-5EBB-4C0B-ACB0-5BB28525E133}.Debug|x86.Build.0 = Debug|Win32
+		{AB324BE7-5EBB-4C0B-ACB0-5BB28525E133}.Release|x64.ActiveCfg = Release|x64
+		{AB324BE7-5EBB-4C0B-ACB0-5BB28525E133}.Release|x64.Build.0 = Release|x64
+		{AB324BE7-5EBB-4C0B-ACB0-5BB28525E133}.Release|x86.ActiveCfg = Release|Win32
+		{AB324BE7-5EBB-4C0B-ACB0-5BB28525E133}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
